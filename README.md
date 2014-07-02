@@ -18,6 +18,5 @@ print("Collection ID: %s"%collection_id)
 media_id = instance.list_media(collection_id=collection_id)['data'][1]['media_id']
 print("Media ID: %s"%media_id)
 episode_url = instance.get_episodes(media_id=media_id)
-print("You can watch the episode at: %s" % 
-episode_url['data'][1]['body']['data']['stream_data']['streams'][0]['url'])
+print("You can watch the episode at: %s" % episode_url['data'][1]['body']['data']['stream_data']['streams'][0]['url'])
 ```
